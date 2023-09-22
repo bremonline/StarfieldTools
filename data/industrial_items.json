@@ -1,0 +1,242 @@
+{
+  "Adaptive Frame": {
+    "skill": "None",
+    "resources": {
+      "Iron": 1,
+      "Aluminum": 1
+    }
+  },
+  "Aldumite Drilling Rig": {
+    "skill": "Special Projects 4",
+    "resources": {
+      "Aldumite": 4,
+      "Microsecond Regulator": 1,
+      "Orilling Rig": 1,
+      "Caesium": 2
+    }
+  },
+  "Austenitic Manifold": {
+    "skill": "None",
+    "resources": {
+      "Reactive Gauge": 1,
+      "Iron": 2,
+      "Nickel": 2
+    }
+  },
+  "Comm Relay": {
+    "skill": "None",
+    "resources": {
+      "Isocentered Magnet": 1,
+      "Tau Grade Rheostat": 1
+    }
+  },
+  "Control Rod": {
+    "skill": "Special Projects 3",
+    "resources": {
+      "Austenitic Manifold": 1,
+      "Isotopic Coolant": 1,
+      "Oysprosium": 3
+    }
+  },
+  "Drilling Rig": {
+    "skill": "Special Projects 2",
+    "resources": {
+      "Reactive Gauge": 1,
+      "Lubricant": 2,
+      "Tungsten": 3
+    }
+  },
+  "Indicite Wafer": {
+    "skill": "Special Projects 4",
+    "resources": {
+      "Semimetal Wafer": 1,
+      "Solvent": 2,
+      "Caesium": 2,
+      "Indicate": 4
+    }
+  },
+  "Isocentered Magnet": {
+    "skill": "None",
+    "resources": {
+      "Nickel": 1,
+      "Cobalt": 1
+    }
+  },
+  "Isotopic Coolant": {
+    "skill": "None",
+    "resources": {
+      "Tetrafluorides": 1,
+      "Ionic Liquids": 1
+    }
+  },
+  "Mag Pressure Tank": {
+    "skill": "None",
+    "resources": {
+      "Nickel": 1,
+      "Aluminum": 2
+    }
+  },,
+  "Microsecond Regulator": {
+    "skill": "Special Projects 3",
+    "resources": {
+      "Supercooled Magnet": 1,
+      "Europium": 4,
+      "Tau Grade Rheostat": 1,
+      "Lithium": 2
+    }
+  },
+  "Molecular Sieve": {
+    "skill": "Special Projects 2",
+    "resources": {
+      "Mag Pressure Tank": 1,
+      "Membrane": 2,
+      "Ionic Liquids": 2
+    }
+  },
+  "Monopropellant": {
+    "skill": "None",
+    "resources": {
+      "Reactive Gauge": 1,
+      "Mag Pressure Tank": 1,
+      "Alkanes": 2
+    }
+  },
+  "Nuclear Fuel Rod": {
+    "skill": "Special Projects 3",
+    "resources": {
+      "Semimetal Wafer": 1,
+      "Uranium": 3,
+      "Solvent": 2
+    }
+  },
+  "Paramagnon Conductor": {
+    "skill": "Special Projects 2",
+    "resources": {
+      "Neodymium": 1,
+      "Zero Wire": 3,
+      "Gold": 1
+    }
+  },
+  "Polytextile": {
+    "skill": "None",
+    "resources": {
+      "Fiber": 2,
+      "Cosmetic": 1
+    }
+  },
+  "Positron Battery": {
+    "skill": "Special Projects 2",
+    "resources": {
+      "Antimony": 2,
+      "Vanadium": 2,
+      "Tau Grade Rheostat": 1
+    }
+  },
+  "Power Circuit": {
+    "skill": "Special Projects 3",
+    "resources": {
+      "Polymer": 2,
+      "Palladium": 4,
+      "Paramagnon Conductor": 1,
+      "Positron Battery": 1
+    }
+  },
+  "Reactive Gauge": {
+    "skill": "None",
+    "resources": {
+      "Aluminum": 2,
+      "Copper": 1
+    }
+  },
+  "Rothicite Magnet": {
+    "skill": "Special Projects 4",
+    "resources": {
+      "Supercooled Magnet": 1,
+      "Semimetal Wafer": 1,
+      "Lithium": 2,
+      "Rothicite": 4
+    }
+  },
+  "Semimetal Wafer": {
+    "skill": "Special Projects 2",
+    "resources": {
+      "Antimony": 2,
+      "Zero Wire": 1,
+      "Gold": 2
+    }
+  },
+  "Sterite Nanotubes": {
+    "skill": "Special Projects 3",
+    "resources": {
+      "Molecular Sieve": 1,
+      "Vanadium": 2,
+      "Solvent": 2
+    }
+  },
+  "Substrate Molecule Sieve": {
+    "skill": "Special Projects 4",
+    "resources": {
+      "Molecular Sieve": 1,
+      "Biosuppressant": 2,
+      "Sterile Nanotubes": 2,
+      "Memory Substrate": 3
+    }
+  },
+  "Supercooled Magnet": {
+    "skill": "Special Projects 2",
+    "resources": {
+      "Neodymium": 3,
+      "Isocentered Magnet": 1,
+      "Isotopic Coolant": 1
+    }
+  },
+  "Tasine Superconductor": {
+    "skill": "Special Projects 4",
+    "resources": {
+      "Polymer": 2,
+      "Tasine": 4,
+      "Paramagnon Conductor": 1,
+      "Palladium": 2
+    }
+  },
+  "Tau Grade Rheostat": {
+    "skill": "None",
+    "resources": {
+      "Beryllium": 1,
+      "Copper": 1
+    }
+  },
+  "Veryl-Treated Manifold": {
+    "skill": "Special Projects 4",
+    "resources": {
+      "Austenitic Manifold": 1,
+      "Lubricant": 2,
+      "Veryl": 4,
+      "Ytterbium": 2
+    }
+  },
+  "Vytinium Fuel Rod": {
+    "skill": "Special Projects 4",
+    "resources": {
+      "Indicite Wafer": 1,
+      "Nuclear Fuel Rod": 1,
+      "Plutonium": 2,
+      "Vytinium": 4
+    }
+  },
+  "Zero Wire": {
+    "skill": "None",
+    "resources": {
+      "Silver": 1,
+      "Copper": 2
+    }
+  },
+  "Zero-G Gimbal": {
+    "skill": "Special Projects 2",
+    "resources": {
+      "Isocentered Magnet": 1,
+      "Tantalum": 2,
+      "Lubricant": 2
+    }
+  }
+}
