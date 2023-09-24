@@ -1,5 +1,6 @@
 {
   "Adaptive Frame": {
+    "value":24,
     "skill": "None",
     "resources": {
       "Iron": 1,
@@ -16,6 +17,7 @@
     }
   },
   "Austenitic Manifold": {
+    "value":79,
     "skill": "None",
     "resources": {
       "Reactive Gauge": 1,
@@ -24,6 +26,7 @@
     }
   },
   "Comm Relay": {
+    "value":117,
     "skill": "None",
     "resources": {
       "Isocentered Magnet": 1,
@@ -39,6 +42,7 @@
     }
   },
   "Drilling Rig": {
+    "value":143,
     "skill": "Special Projects 2",
     "resources": {
       "Reactive Gauge": 1,
@@ -47,6 +51,7 @@
     }
   },
   "Indicite Wafer": {
+    "value":36,
     "skill": "Special Projects 4",
     "resources": {
       "Semimetal Wafer": 1,
@@ -63,6 +68,7 @@
     }
   },
   "Isotopic Coolant": {
+    "value":25,
     "skill": "None",
     "resources": {
       "Tetrafluorides": 1,
@@ -70,6 +76,7 @@
     }
   },
   "Mag Pressure Tank": {
+    "value":25,
     "skill": "None",
     "resources": {
       "Nickel": 1,
@@ -86,6 +93,7 @@
     }
   },
   "Molecular Sieve": {
+    "value":91,
     "skill": "Special Projects 2",
     "resources": {
       "Mag Pressure Tank": 1,
@@ -94,6 +102,7 @@
     }
   },
   "Monopropellant": {
+    "value":76,
     "skill": "None",
     "resources": {
       "Reactive Gauge": 1,
@@ -110,6 +119,7 @@
     }
   },
   "Paramagnon Conductor": {
+    "value":153,
     "skill": "Special Projects 2",
     "resources": {
       "Neodymium": 1,
@@ -118,6 +128,7 @@
     }
   },
   "Polytextile": {
+    "value":25,
     "skill": "None",
     "resources": {
       "Fiber": 2,
@@ -125,6 +136,7 @@
     }
   },
   "Positron Battery": {
+    "value":133,
     "skill": "Special Projects 2",
     "resources": {
       "Antimony": 2,
@@ -142,6 +154,7 @@
     }
   },
   "Reactive Gauge": {
+    "value":25,
     "skill": "None",
     "resources": {
       "Aluminum": 2,
@@ -158,6 +171,7 @@
     }
   },
   "Semimetal Wafer": {
+    "value":149,
     "skill": "Special Projects 2",
     "resources": {
       "Antimony": 2,
@@ -183,6 +197,7 @@
     }
   },
   "Supercooled Magnet": {
+    "value":111,
     "skill": "Special Projects 2",
     "resources": {
       "Neodymium": 3,
@@ -200,6 +215,7 @@
     }
   },
   "Tau Grade Rheostat": {
+    "value":82,
     "skill": "None",
     "resources": {
       "Beryllium": 1,
@@ -225,6 +241,7 @@
     }
   },
   "Zero Wire": {
+    "value":52,
     "skill": "None",
     "resources": {
       "Silver": 1,
@@ -232,6 +249,7 @@
     }
   },
   "Zero-G Gimbal": {
+    "value":93,
     "skill": "Special Projects 2",
     "resources": {
       "Isocentered Magnet": 1,
