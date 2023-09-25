@@ -7,10 +7,10 @@ $(document).ready(function(){
   $("#list_systems").html("Planets:<br/>");
 
 
-  $.get("/data/resources_by_planet.json", function(data, status){
+  $.get("/../../data/resources_by_planet.json", function(data, status){
     create_list_of_systems(data);
-    $("#list_systems").append(JSON.stringify(system_list));
 
+    $("#list_systems").append(JSON.stringify(system_list));
   });
 });
 
