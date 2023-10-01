@@ -3,10 +3,15 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"> </script>
   <script type='text/javascript' src='planet_details.js'> </script>
 
-<TITLE> Starfield Planets Details </TITLE>
+<TITLE> Starfield Planet Details </TITLE>
 </HEAD>
-Testing the infrastructure.
+<DIV id="system_selector_div">
+  <SELECT id="system_selector_selection">
+    <option disabled="disabled" selected="selected">Select a System</option>
+    <option value="1" class="others">one</option>
+    <option value="2" class="others">two</option>  </SELECT>
+</DIV>
 
 <DIV id='list_systems'> </DIV>
-
+<A href="#" id="download_link"> Download Link </A>
 </HTML>

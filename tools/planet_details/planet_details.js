@@ -11,14 +11,24 @@ $(document).ready(function(){
     create_list_of_systems(data);
 
     $("#list_systems").append(JSON.stringify(system_list));
+    create_save_link();
   });
 });
 
 function create_list_of_systems(data) {
   $.each(data, function(planet_name, resources) {
     information = planet_name.split(".");
-    console.log(information[0]);
-    if (system_list[information[0]] == null) system_list[information[0]] = 0;
-    system_list[information[0]]++;
+    console.log(information[0]+":"+information[1]);
+    if (!system_list[information[0]]) system_list[information[0]] = [];
+    system_list[information[0]].push(information[1]);
   });
+}
+
+function create_save_link() {
+
+  var link = $("#download_link");
+
+  link.attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(system_list)));
+  link.attr('download', `system_planets.json`);
+  alert("Setting donwload");
 }
