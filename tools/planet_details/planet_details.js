@@ -17,12 +17,20 @@ const static_lists = {
   "water": ["NONE", "HEAVY METAL", "CHEMICAL", "SAFE", "BIOLOGICAL"]
 }
 
+var resources = {};
+
 $(document).ready(function(){
   $("#list_systems").html("Planets:<br/>");
 
   $.get("./../../data/system_planets.json", function(data, status){
     load_planets(data);
-   });
+  });
+
+  $.get("./../../data/resources.json", function(data, status){
+    resources = data;
+    show_resources();
+  });
+
 
   $( "#system_selector" ).on( "change", function() {
     set_planet_chooser();
@@ -31,6 +39,13 @@ $(document).ready(function(){
     show_planet_details();
   });
 
+  $("#show_current_resources_button").click(function () {
+    $(".unselected_resource").fadeOut("slow");
+  });
+
+  $("#show_all_resources_button").click(function () {
+    $(".unselected_resource").fadeIn("slow");
+  });
 });
 
 function load_planets(data) {
@@ -49,6 +64,8 @@ function set_planet_chooser() {
   console.log(planet_list);
 
   const selector = $("#planet_selector").empty();
+  selector.append("<OPTION disabled=\"disabled\" selected=\"selected\">Select a Planet</OPTION>");
+
   $.each(planet_list, function(index, planet_name) {
     var opt = $("<OPTION>").text(planet_name).val(planet_name);
     selector.append(opt);
@@ -87,6 +104,35 @@ function show_planet_details() {
   $(".resources_panel").fadeIn("slow");
 }
 
+function show_resources() {
+  const list = $("#resource_list");
+  list.empty();
+  var i= 0;
+  $.each(resources, function(resource_code, resource_details) {
+    var el = $("<SPAN class='periodic_view'>").append(resource_code)
+        .addClass("unselected_resource")
+        .attr("title", resource_details["name"])
+        .attr("natural-color", resource_details["color"]);
+    el.click( function () {
+      resource_was_clicked(el);
+    });
+    list.append(el);
+  });
+}
+
+function resource_was_clicked(el) {
+  const color = el.attr("natural-color")
+  if (el.hasClass("unselected_resource")) {
+    el.css("background-color", color );
+    el.removeClass("unselected_resource");
+    el.addClass("selected_resource");
+  } else {
+    el.css("background-color", "#DDD" );
+    el.removeClass("selected_resource");
+    el.addClass("unselected_resource");
+  }
+}
+
 function set_enum(selector, enumerator) {
   selector.empty().append($("<OPTION>").val("").text(""));
 
@@ -107,24 +153,3 @@ function set_gravity_enum(selector) {
     selector.val("1.00");
   }
 }
-
-
-/*
-function create_list_of_systems(data) {
-  $.each(data, function(planet_name, resources) {
-    information = planet_name.split(".");
-    console.log(information[0]+":"+information[1]);
-    if (!system_list[information[0]]) system_list[information[0]] = [];
-    system_list[information[0]].push(information[1]);
-  });
-}
-
-function create_save_link() {
-
-  var link = $("#download_link");
-
-  link.attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(system_list)));
-  link.attr('download', `system_planets.json`);
-  alert("Setting donwload");
-}
-*/

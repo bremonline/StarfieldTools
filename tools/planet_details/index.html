@@ -26,7 +26,7 @@
 <DIV class="container">
 
   <DIV class="picture_panel column" style="display:none;">
-    <TABLE id="details_table" style="width:100%">
+    <TABLE id="overview_table" style="width:100%">
       <TR><TD class="planet_name" id="planet_name">Planet Name</TD></TR>
       <TR><TD class="system_name" id="system_name">System Name</TD></TR>
       <TR><TD class="survey_complete" colspan="2" id="survey_name">
@@ -54,6 +54,10 @@
       </TR>
     </TABLE>
   </DIV>
-  <DIV class="resources_panel column" style="display:none;flex:100%"> resource goes here</DIV>
+  <DIV class="resources_panel column" style="display:none;flex:100%;">
+    <BUTTON id="show_current_resources_button" class="resource_button"> Show Only Current Resources </BUTTON>
+    <BUTTON id="show_all_resources_button" class="resource_button"> Show All Resources </BUTTON>
+    <DIV id="resource_list" ></DIV>
+  </DIV>
 </DIV>
 </HTML>
