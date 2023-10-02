@@ -36,6 +36,7 @@ $(document).ready(function(){
     set_planet_chooser();
   });
   $( "#planet_selector" ).on( "change", function() {
+    clear_all_resource_selection();
     show_planet_details();
   });
 
@@ -131,6 +132,18 @@ function resource_was_clicked(el) {
     el.removeClass("selected_resource");
     el.addClass("unselected_resource");
   }
+}
+
+function clear_all_resource_selection () {
+  $(".selected_resource")
+    .css("background-color", "#DDD" )
+    .addClass("unselected_resource")
+    .removeClass("selected_resource");
+
+  $(".unselected_resource").fadeIn("slow");
+
+
+
 }
 
 function set_enum(selector, enumerator) {
