@@ -3,15 +3,53 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"> </script>
   <script type='text/javascript' src='planet_details.js'> </script>
 
+  <link rel="stylesheet" href="planet_details.css">
+
 <TITLE> Starfield Planet Details </TITLE>
 </HEAD>
-<DIV id="system_selector_div">
-  <SELECT id="system_selector_selection">
-    <option disabled="disabled" selected="selected">Select a System</option>
-    <option value="1" class="others">one</option>
-    <option value="2" class="others">two</option>  </SELECT>
+<DIV class="selector_panel">
+  <DIV id="system_select_row">
+    Please select a Star System First:&nbsp;
+    <SELECT id="system_selector">
+      <option disabled="disabled" selected="selected">Select a System</option>
+    </SELECT>
+  </DIV>
+  <DIV id="planet_select_row" style="display:none">
+    Then select a Planet:&nbsp;
+    <SELECT id="planet_selector"></SELECT>
+  </DIV>
 </DIV>
+<DIV class="container">
 
-<DIV id='list_systems'> </DIV>
-<A href="#" id="download_link"> Download Link </A>
+  <DIV class="picture_panel column" style="display:none;">
+    <TABLE id="details_table" style="width:100%">
+      <TR><TD class="planet_name" id="planet_name">Planet Name</TD></TR>
+      <TR><TD class="system_name" id="system_name">System Name</TD></TR>
+      <TR><TD class="survey_complete" colspan="2" id="survey_name">
+        Survey % &nbsp; <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style="width:100%">
+      </TD></TR>
+      <TR><TD class="planet_picture" id="planet_picture"><IMG src="./images/planet_o2.png" style="width:100%;height:auto;"></IMG></TD></TR>
+    </TABLE>
+  </DIV>
+  <DIV class="details_panel column" style="display:none;">
+    <TABLE id="planet_details_table" >
+      <TR>
+        <TD id="details">
+          <TABLE id="details_table">
+             <TR><TH class="key">LOCATION</TH><TD>X:<SELECT id="X"></SELECT><br>Y:<SELECT id="Y"></SELECT><br>Z:<SELECT id="Z"></SELECT></TD></TR>
+            <TR><TH class="key">TYPE</TH><TD><SELECT id="type_enum"></SELECT></TD></TR>
+            <TR><TH class="key">GRAVITY</TH><TD><SELECT id="gravity_enum"></SELECT></TD></TR>
+            <TR><TH class="key">TEMPERATURE</TH><TD><SELECT id="temperature_enum"></SELECT></TD></TR>
+            <TR><TH class="key">ATMOSPHERE</TH><TD><SELECT id="atmosphere_enum"></SELECT><SELECT id="extreme_enum"></SELECT></TD></TR>
+            <TR><TH class="key">MAGNETOSPHERE</TH><TD> <SELECT id="magnetosphere_enum"></SELECT></TD></TR>
+            <TR><TH class="key">FLORA</TH><TD> <SELECT id="flora_enum"></SELECT> <SELECT id="flora_count_enum"></SELECT></TD></TR>
+            <TR><TH class="key">FAUNA</TH><TD><SELECT id="fauna_enum"></SELECT><SELECT id="fauna_count_enum"></SELECT></TD></TR>
+            <TR><TH class="key">WATER</TH><TD> <SELECT id="water_enum"></SELECT> </TD></TR>
+          </TABLE>
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+  <DIV class="resources_panel column" style="display:none;flex:100%"> resource goes here</DIV>
+</DIV>
 </HTML>
