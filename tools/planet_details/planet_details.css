@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 20px;
+    border:1px solid black;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+.selector_panel {
+    border:1px solid black;
+    font-size:larger;
+    padding:20px;
+}
+
+.planet_name {
+    font-size:larger;
+    font-weight: bolder;
+}
+
+.system_name {
+    font-size:small;
+}
+
+.survey_complete {
+    border:2px solid darkblue;
+    font-size:12px;
+    padding:10px;
+}
+
+.key {
+    background-color:lightgrey;
+    text-align:left;
+    padding:10px;
+}
+
+.resource_button {
+    margin-bottom:20px;
+}
+
+#resource_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.periodic_view {
+    border:2px solid black;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:22px;
+    padding-bottom:22px;
+    background-color:#DDD;
+    min-width:50px;
+    margin:3px;
+    text-align:center;
+    cursor:pointer;
+}
