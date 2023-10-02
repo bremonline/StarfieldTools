@@ -1,5 +1,7 @@
 <HTML>
 <HEAD>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"> </script>
   <script type='text/javascript' src='planet_details.js'> </script>
 
@@ -9,15 +11,17 @@
 </HEAD>
 <DIV class="selector_panel">
   <DIV id="system_select_row">
-    Please select a Star System First:&nbsp;
+    Star System:&nbsp;
     <SELECT id="system_selector">
       <option disabled="disabled" selected="selected">Select a System</option>
     </SELECT>
   </DIV>
+  <BR>
   <DIV id="planet_select_row" style="display:none">
     Then select a Planet:&nbsp;
     <SELECT id="planet_selector"></SELECT>
   </DIV>
+  <BR>
 </DIV>
 <DIV class="container">
 
